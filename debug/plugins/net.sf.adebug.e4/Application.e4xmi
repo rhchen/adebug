@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_IEwwsGvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ide.application" bindingContexts="_IEwwuWvfEeO6Deo3qfDulA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_IEwwsWvfEeO6Deo3qfDulA" label="net.sf.adebug.e4" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_IExXymvfEeO6Deo3qfDulA">
+      <children xsi:type="advanced:Perspective" xmi:id="_IExXy2vfEeO6Deo3qfDulA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_IExXzGvfEeO6Deo3qfDulA">
+          <children xsi:type="basic:PartStack" xmi:id="_IExXzWvfEeO6Deo3qfDulA">
+            <children xsi:type="basic:Part" xmi:id="_IExXzmvfEeO6Deo3qfDulA" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.parts.SamplePart" label="Sample Part"/>
+            <children xsi:type="advanced:Placeholder" xmi:id="_abTsYGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView" ref="_89wMwGvuEeO6Deo3qfDulA"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_IExXw2vfEeO6Deo3qfDulA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_IExXxGvfEeO6Deo3qfDulA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_IExXxWvfEeO6Deo3qfDulA" label="Open" iconURI="platform:/plugin/net.sf.adebug.e4/icons/sample.gif" command="_IEwwwGvfEeO6Deo3qfDulA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_IExXxmvfEeO6Deo3qfDulA" label="Save" iconURI="platform:/plugin/net.sf.adebug.e4/icons/save_edit.gif" command="_IEwww2vfEeO6Deo3qfDulA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_IExXx2vfEeO6Deo3qfDulA" label="Quit" command="_IEwwvGvfEeO6Deo3qfDulA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_IExXyGvfEeO6Deo3qfDulA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_IExXyWvfEeO6Deo3qfDulA" label="About" command="_IExXwGvfEeO6Deo3qfDulA"/>
+      </children>
+    </mainMenu>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_BvZW0GvvEeO6Deo3qfDulA" elementId="net.sf.adebug.e4.area.0">
+      <children xsi:type="basic:PartStack" xmi:id="_Gic2IGvvEeO6Deo3qfDulA" elementId="org.eclipse.e4.primaryDataStack"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_89wMwGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%DebugView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/debug_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_89wMwWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_89wMwmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_ZykGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%BreakpointsView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/breakpoint_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_8_ZykWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_8_ZykmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_kKoGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%VariablesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/variable_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_8_kKoWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_8_kKomvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_vJwGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ExpressionView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/watchlist_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_8_vJwWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_8_vJwmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_9MMGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%RegistersView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/register_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_8_9MMWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_8_9MMmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_9ALOoGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ModulesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/module_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_9ALOoWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_9ALOomvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_9AYC8GvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%MemoryViewName" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/memory_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.debug.ui</tags>
+      <menus xmi:id="_9AYC8WvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_9AYC8mvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView"/>
+    </sharedElements>
+    <trimBars xmi:id="_IExXz2vfEeO6Deo3qfDulA">
+      <children xsi:type="menu:ToolBar" xmi:id="_IExX0GvfEeO6Deo3qfDulA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IExX0WvfEeO6Deo3qfDulA" iconURI="platform:/plugin/net.sf.adebug.e4/icons/sample.gif" command="_IEwwwGvfEeO6Deo3qfDulA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IExX0mvfEeO6Deo3qfDulA" iconURI="platform:/plugin/net.sf.adebug.e4/icons/save_edit.gif" command="_IEwww2vfEeO6Deo3qfDulA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_IEwwvWvfEeO6Deo3qfDulA" elementId="net.sf.adebug.e4.handler.quitCommand" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.handlers.QuitHandler" command="_IEwwvGvfEeO6Deo3qfDulA"/>
+  <handlers xmi:id="_IEwwwWvfEeO6Deo3qfDulA" elementId="net.sf.adebug.e4.handler.openCommand" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.handlers.OpenHandler" command="_IEwwwGvfEeO6Deo3qfDulA"/>
+  <handlers xmi:id="_IEwwxGvfEeO6Deo3qfDulA" elementId="net.sf.adebug.e4.handler.saveCommand" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.handlers.SaveHandler" command="_IEwww2vfEeO6Deo3qfDulA"/>
+  <handlers xmi:id="_IExXwWvfEeO6Deo3qfDulA" elementId="net.sf.adebug.e4.handler.aboutCommand" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.handlers.AboutHandler" command="_IExXwGvfEeO6Deo3qfDulA"/>
+  <bindingTables xmi:id="_IEwwvmvfEeO6Deo3qfDulA" bindingContext="_IEwwuWvfEeO6Deo3qfDulA">
+    <bindings xmi:id="_IEwwv2vfEeO6Deo3qfDulA" keySequence="M1+Q" command="_IEwwvGvfEeO6Deo3qfDulA"/>
+    <bindings xmi:id="_IEwwwmvfEeO6Deo3qfDulA" keySequence="M1+O" command="_IEwwwGvfEeO6Deo3qfDulA"/>
+    <bindings xmi:id="_IEwwxWvfEeO6Deo3qfDulA" keySequence="M1+S" command="_IEwww2vfEeO6Deo3qfDulA"/>
+    <bindings xmi:id="_IExXwmvfEeO6Deo3qfDulA" keySequence="M1+A" command="_IExXwGvfEeO6Deo3qfDulA"/>
+  </bindingTables>
+  <rootContext xmi:id="_IEwwuWvfEeO6Deo3qfDulA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_IEwwumvfEeO6Deo3qfDulA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_IEwwu2vfEeO6Deo3qfDulA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="_to270GvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView" label="%DebugView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/debug_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_to270WvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_to270mvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView"/>
+  </descriptors>
+  <descriptors xmi:id="_tqAyYGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView" label="%BreakpointsView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/breakpoint_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_tqAyYWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_tqAyYmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView"/>
+  </descriptors>
+  <descriptors xmi:id="_tqJ8UGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView" label="%VariablesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/variable_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_tqJ8UWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_tqJ8UmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView"/>
+  </descriptors>
+  <descriptors xmi:id="_tqTtUGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView" label="%ExpressionView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/watchlist_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_tqTtUWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_tqTtUmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView"/>
+  </descriptors>
+  <descriptors xmi:id="_tqxnYGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView" label="%RegistersView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/register_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_tqxnYWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_tqxnYmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView"/>
+  </descriptors>
+  <descriptors xmi:id="_tq-bsGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView" label="%ModulesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/module_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_tq_CwGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_tq_CwWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView"/>
+  </descriptors>
+  <descriptors xmi:id="_trKo8GvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView" label="%MemoryViewName" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/memory_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_trKo8WvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_trKo8mvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView"/>
+  </descriptors>
+  <commands xmi:id="_IEwwvGvfEeO6Deo3qfDulA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_IEwwwGvfEeO6Deo3qfDulA" elementId="net.sf.adebug.e4.open" commandName="openCommand"/>
+  <commands xmi:id="_IEwww2vfEeO6Deo3qfDulA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_IExXwGvfEeO6Deo3qfDulA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_IEwwsmvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_IEwws2vfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_IEwwtGvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_IEwwtWvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_IEwwtmvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_IEwwt2vfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_IEwwuGvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

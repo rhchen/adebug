@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="net.sf.adebug.e4"
+            application="net.sf.adebug.e4.application">
+         <property
+               name="clearPersistedState"
+               value="true">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/net.sf.adebug.e4/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="net.sf.adebug.e4">
+         </property>
+         <property
+               name="applicationXMI"
+               value="net.sf.adebug.e4/Application.e4xmi">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="net.sf.adebug.e4.application.Application">
+         </run>
+      </application>
+   </extension>
+
+</plugin>
