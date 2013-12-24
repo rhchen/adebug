@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_IEwwsGvfEeO6Deo3qfDulA" elementId="org.eclipse.e4.ide.application" bindingContexts="_IEwwuWvfEeO6Deo3qfDulA">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_IEwwsWvfEeO6Deo3qfDulA" label="net.sf.adebug.e4" width="500" height="400">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_IEwwsWvfEeO6Deo3qfDulA" label="net.sf.adebug.e4" width="1024" height="768">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_IExXymvfEeO6Deo3qfDulA">
       <children xsi:type="advanced:Perspective" xmi:id="_IExXy2vfEeO6Deo3qfDulA">
         <children xsi:type="basic:PartSashContainer" xmi:id="_IExXzGvfEeO6Deo3qfDulA">
-          <children xsi:type="basic:PartStack" xmi:id="_IExXzWvfEeO6Deo3qfDulA">
-            <children xsi:type="basic:Part" xmi:id="_IExXzmvfEeO6Deo3qfDulA" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.parts.SamplePart" label="Sample Part"/>
-            <children xsi:type="advanced:Placeholder" xmi:id="_abTsYGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView" ref="_89wMwGvuEeO6Deo3qfDulA"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_20ngsGyxEeO6xLxud1Lvdg" elementId="net.sf.adebug.e4.partsashcontainer.1" containerData="3000" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_IExXzWvfEeO6Deo3qfDulA">
+              <children xsi:type="basic:Part" xmi:id="_IExXzmvfEeO6Deo3qfDulA" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.parts.SamplePart" label="Sample Part"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_abTsYGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView" ref="_89wMwGvuEeO6Deo3qfDulA" closeable="true"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_7dcF8GyxEeO6xLxud1Lvdg" elementId="net.sf.adebug.e4.partstack.0">
+              <children xsi:type="advanced:Placeholder" xmi:id="_8jz4IGyxEeO6xLxud1Lvdg" elementId="org.eclipse.debug.ui.VariableView" ref="_8_kKoGvuEeO6Deo3qfDulA" closeable="true"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Kw3MsGyyEeO6xLxud1Lvdg" elementId="org.eclipse.debug.ui.BreakpointView" ref="_8_ZykGvuEeO6Deo3qfDulA" closeable="true"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Qh-PsGyyEeO6xLxud1Lvdg" elementId="org.eclipse.debug.ui.ExpressionView" ref="_8_vJwGvuEeO6Deo3qfDulA" closeable="true"/>
+            </children>
           </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_xz5_4GyxEeO6xLxud1Lvdg" elementId="net.sf.adebug.e4.partsashcontainer.0" containerData="7000" horizontal="true"/>
         </children>
       </children>
     </children>
@@ -32,7 +40,7 @@
       </menus>
       <toolbar xmi:id="_89wMwmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_8_ZykGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%BreakpointsView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/breakpoint_view.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_ZykGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%BreakpointsView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/breakpoint_view.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.debug.ui</tags>
       <menus xmi:id="_8_ZykWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView">
@@ -40,7 +48,7 @@
       </menus>
       <toolbar xmi:id="_8_ZykmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_8_kKoGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%VariablesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/variable_view.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_kKoGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%VariablesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/variable_view.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.debug.ui</tags>
       <menus xmi:id="_8_kKoWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView">
@@ -48,7 +56,7 @@
       </menus>
       <toolbar xmi:id="_8_kKomvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_8_vJwGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ExpressionView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/watchlist_view.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_vJwGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ExpressionView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/watchlist_view.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.debug.ui</tags>
       <menus xmi:id="_8_vJwWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView">
@@ -56,7 +64,7 @@
       </menus>
       <toolbar xmi:id="_8_vJwmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_8_9MMGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%RegistersView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/register_view.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_8_9MMGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%RegistersView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/register_view.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.debug.ui</tags>
       <menus xmi:id="_8_9MMWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView">
@@ -64,7 +72,7 @@
       </menus>
       <toolbar xmi:id="_8_9MMmvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_9ALOoGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ModulesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/module_view.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_9ALOoGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ModulesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/module_view.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.debug.ui</tags>
       <menus xmi:id="_9ALOoWvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView">
@@ -72,7 +80,7 @@
       </menus>
       <toolbar xmi:id="_9ALOomvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_9AYC8GvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%MemoryViewName" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/memory_view.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_9AYC8GvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%MemoryViewName" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/memory_view.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.debug.ui</tags>
       <menus xmi:id="_9AYC8WvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView">
@@ -107,37 +115,37 @@
     </menus>
     <toolbar xmi:id="_to270mvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView"/>
   </descriptors>
-  <descriptors xmi:id="_tqAyYGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView" label="%BreakpointsView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/breakpoint_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_tqAyYGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView" label="%BreakpointsView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/breakpoint_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_tqAyYWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_tqAyYmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.BreakpointView"/>
   </descriptors>
-  <descriptors xmi:id="_tqJ8UGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView" label="%VariablesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/variable_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_tqJ8UGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView" label="%VariablesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/variable_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_tqJ8UWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_tqJ8UmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.VariableView"/>
   </descriptors>
-  <descriptors xmi:id="_tqTtUGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView" label="%ExpressionView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/watchlist_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_tqTtUGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView" label="%ExpressionView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/watchlist_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_tqTtUWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_tqTtUmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ExpressionView"/>
   </descriptors>
-  <descriptors xmi:id="_tqxnYGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView" label="%RegistersView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/register_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_tqxnYGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView" label="%RegistersView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/register_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_tqxnYWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_tqxnYmvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.RegisterView"/>
   </descriptors>
-  <descriptors xmi:id="_tq-bsGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView" label="%ModulesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/module_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_tq-bsGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView" label="%ModulesView.name" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/module_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_tq_CwGvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_tq_CwWvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.ModuleView"/>
   </descriptors>
-  <descriptors xmi:id="_trKo8GvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView" label="%MemoryViewName" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/memory_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_trKo8GvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView" label="%MemoryViewName" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/memory_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_trKo8WvtEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.MemoryView">
       <tags>ViewMenu</tags>
     </menus>
