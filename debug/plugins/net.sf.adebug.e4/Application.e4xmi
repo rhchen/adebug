@@ -6,8 +6,8 @@
         <children xsi:type="basic:PartSashContainer" xmi:id="_IExXzGvfEeO6Deo3qfDulA">
           <children xsi:type="basic:PartSashContainer" xmi:id="_20ngsGyxEeO6xLxud1Lvdg" elementId="net.sf.adebug.e4.partsashcontainer.1" containerData="3000" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_IExXzWvfEeO6Deo3qfDulA">
-              <children xsi:type="basic:Part" xmi:id="_IExXzmvfEeO6Deo3qfDulA" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.parts.SamplePart" label="Sample Part"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_abTsYGvuEeO6Deo3qfDulA" elementId="org.eclipse.debug.ui.DebugView" ref="_89wMwGvuEeO6Deo3qfDulA" closeable="true"/>
+              <children xsi:type="basic:Part" xmi:id="_IExXzmvfEeO6Deo3qfDulA" contributionURI="bundleclass://net.sf.adebug.e4/net.sf.adebug.e4.parts.SamplePart" label="Sample Part"/>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_7dcF8GyxEeO6xLxud1Lvdg" elementId="net.sf.adebug.e4.partstack.0">
               <children xsi:type="advanced:Placeholder" xmi:id="_8jz4IGyxEeO6xLxud1Lvdg" elementId="org.eclipse.debug.ui.VariableView" ref="_8_kKoGvuEeO6Deo3qfDulA" closeable="true"/>
